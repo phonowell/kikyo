@@ -62,7 +62,7 @@ $$.task 'prepare', co ->
 
   # secret
 
-  yield $$.compile './secret/config.yml'
+  yield $$.compile './secret/**/*.yaml'
 
   # static
 
