@@ -1,0 +1,7 @@
+mixin style(src)
+    link(
+        rel = 'stylesheet', type = 'text/css'
+        href = '/static/' + src + '.css?salt=' + salt
+    )
+
++style('core/style/core')

@@ -1,0 +1,25 @@
+include include/basic
+doctype html
+html
+    head
+        include include/meta
+        title #{data.message} - #{app.title}
+        include include/style
+        +style('error/style/error')
+    body#stage
+        include include/tool
+        include include/bar
+        #mainer: .inner
+            #area-main-error
+                .emotion :(
+                p.main
+                    | #{data.message}，需要返回首页。
+                    br
+                    | 我们将为你尽快修复这个问题。
+                p.sub
+                    | 有关于此问题的详细信息和可能的解决方法，请发送邮件至
+                    a(href = 'mailto:feedback@anitama.cn') feedback@anitama.cn
+                    | 以获得更多技术支持。
+        include include/footer
+        include include/script
+        +script('error/script/error')

@@ -1,0 +1,53 @@
+- fixed ? null : fixed = {}
+#area-tool-fixed
+    if fixed.favor
+        a#btn-favor-fixed.btn.not-ready
+            .before
+                i.icon.icon-star-outline
+                p
+                    | 添加
+                    br
+                    | 收藏
+            .after
+                i.icon.icon-star
+                p
+                    | 取消
+                    br
+                    | 收藏
+    if fixed.share
+        a#btn-share-fixed.btn
+            i.icon.icon-share
+            p 分享
+            #block-share-fixed.clear
+                i#btn-moments-share.icon.icon-moments(title = '分享到微信朋友圈')
+                i#btn-weibo-share.icon.icon-weibo(title = '分享到微博')
+                i#btn-qq-share.icon.icon-qq(title = '分享到QQ好友')
+                i#btn-qqzone-share.icon.icon-qqzone(title = '分享到QQ空间')
+                i#btn-tieba-share.icon.icon-baidu(title = '分享到百度贴吧')
+            #block-share-baidu.bdsharebuttonbox.hidden
+                a.bds_weixin(href = '#', data-cmd = 'weixin')
+                a.bds_tsina(href = '#', data-cmd = 'tsina')
+                a.bds_sqq(href = '#', data-cmd = 'sqq')
+                a.bds_qzone(href = '#', data-cmd = 'qzone')
+                a.bds_tieba(href = '#', data-cmd = 'tieba')
+    if fixed.comment
+        a#btn-comment-fixed.btn.not-ready
+            i.icon.icon-comment
+            p
+                | 发表
+                br
+                | 评论
+            span.pts.not-visible 0
+    a#btn-download-fixed.btn(href = '/download', target = '_blank')
+        i.icon.icon-phone
+        p
+            | 下载
+            br
+            | APP
+        img.qrcode(data-src = '/static/index/style/image/qrcode-download.png')
+    a#btn-top-fixed.btn
+        i.icon.icon-arrow-up
+        p
+            | 返回
+            br
+            | 顶部
