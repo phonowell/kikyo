@@ -5,9 +5,6 @@ bodyParser = require 'body-parser'
 helmet = require 'helmet'
 pug = require 'pug'
 
-ago = app.fn.require './source/module/ago'
-pager = app.fn.require './source/module/pager'
-
 # router
 
 router = express()
@@ -26,18 +23,14 @@ class Router
 
   ###
 
-    ago()
     data(key)
     fail(msg, message, code)
     getPugSrc(src)
-    pager()
     pug(src, data)
     redirect(url)
     send(arg)
 
   ###
-
-  ago: ago
 
   data: (key) ->
 
@@ -58,8 +51,6 @@ class Router
     @send 'error', code, {message}
 
   getPugSrc: (src) -> app.fn.normalizePath "./source/view/#{src}.pug"
-
-  pager: pager
 
   pug: (src, data) ->
 

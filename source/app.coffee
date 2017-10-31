@@ -18,5 +18,8 @@ global.app = require "#{cwd}/source/module/app"
 # app.fn
 app.fn = require "#{app.path.base}/source/module/fn"
 
+# extend $
+$.ago = app.fn.require './source/module/ago'
+
 # router
 app.fn.require './source/module/router'

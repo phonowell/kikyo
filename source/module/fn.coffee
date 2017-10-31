@@ -77,4 +77,5 @@ $$.require = (source) ->
 
 $$.token = -> Math.random().toString(36).substr(2)[...8]
 
+# return
 module.exports = $$

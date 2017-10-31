@@ -21,16 +21,16 @@
   },
   "homepage": "https://github.com/phonowell/kikyo",
   "devDependencies": {
-    "fire-keeper": "0.0.60",
-    "mocha": "^3.5.0"
+    "fire-keeper": "0.0.77",
+    "mocha": "^4.0.1"
   },
   "dependencies": {
-    "bluebird": "^3.5.0",
-    "body-parser": "^1.17.2",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
-    "express": "^4.15.4",
-    "helmet": "^3.8.1",
-    "node-jquery-extend": "0.0.14",
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "node-jquery-extend": "0.0.19",
     "pug": "^2.0.0-rc.3",
     "urlsafe-base64": "^1.0.0"
   }
