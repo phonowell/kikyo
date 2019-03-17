@@ -3,15 +3,20 @@
 .idea
 .temp
 .vscode
+dist
+gurumin
+lint
 secret
 source
 storage
+task
 temp
 # file
 *.coffee
 *.map
 *.md
+*.yaml
 *.yml
-coffeelint.yaml
+.stylintrc
+coffeelint.json
 package-lock.json
-stylint.yaml

@@ -1,0 +1,69 @@
+@require 'include/rule'
+
+normalize-css()
+global-reset()
+
+@require '../../../gurumin/style/include/reset'
+@require 'include/info'
+@require 'include/toolkit'
+
+#stage
+  background-image linear-gradient(#555, #333)
+  overflow hidden
+
+#ipt-controller
+  opacity 0
+  pointer-events none
+
+#world
+  $size = 32px
+  $bgc = rgba(#000, 0.05)
+  position absolute
+  left 50%
+  top 50%
+  font-size 0
+  background-color #fff
+  background-image linear-gradient(45deg, $bgc 25%, transparent 0), linear-gradient(45deg, transparent 75%, $bgc 0), linear-gradient(45deg, $bgc 25%, transparent 0), linear-gradient(45deg, transparent 75%, $bgc 0)
+  background-position 0 0, $size $size, $size $size, $size * 2 ($size * 2)
+  background-size $size * 2 ($size * 2)
+  color #555
+  border-radius 4px
+  box-shadow 0 8px 16px rgba(#000, 0.5)
+  transform translate(-50%, -50%)
+  animation animation-world 1s ease both
+
+  .item
+    display block
+    position absolute
+    width $size
+    height @width
+    left 0
+    top 0
+    text-align center
+    line-height @height
+    transition transform 200ms linear
+
+    &:before, &:after
+      content ''
+      display block
+      position absolute
+      width @width - 4px
+      height @width
+      left 2px
+      top @left
+      line-height @height
+      box-sizing border-box
+      pointer-events none
+
+    &:before
+      background-color #000
+      border-radius 4px
+
+    &:after
+      color #fff
+      font-size 10px
+
+@require 'include/zero'
+@require 'include/first'
+@require 'include/second'
+@require 'include/animation'

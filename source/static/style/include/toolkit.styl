@@ -1,0 +1,55 @@
+#toolkit
+  display block
+  position absolute
+  width 64px
+  height auto
+  right 16px
+  top 50%
+  font-size 0
+  transform translateY(-50%)
+  animation animation-toolkit 300ms ease both
+
+  .btn
+    display block
+    position relative
+    width 64px
+    height @width
+    text-align center
+    line-height @height
+    color #333
+    font-size 12px
+    padding 0
+    margin-top 16px
+    cursor pointer
+    transform scale(0.9) rotate(-15deg)
+    transition transform 300ms ease
+
+    &:before
+      content ''
+      display block
+      position absolute
+      z-index -1
+      width 64px
+      height @width
+      left 0
+      top @left
+      background-color gold
+      transform scale(0.8) rotate(-15deg)
+      border-radius 4px
+      transition transform 300ms ease, background-color 300ms ease
+
+    &:first-of-type
+      margin-top 0
+
+    &:hover
+      transform scale(1) rotate(0)
+
+      &:before
+        transform scale(0.95) rotate(45deg)
+
+    &:active
+      transform scale(1) rotate(0)
+
+      &:before
+        transform scale(0.9) rotate(45deg)
+        background-color gold - 5%

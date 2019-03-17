@@ -1,0 +1,260 @@
+#world
+  .item-Baba
+    &:after
+      content 'BA BA'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-baba
+    &:before
+      background-color pink
+      transform-origin bottom
+      animation animation-breathing 1s ease infinite
+
+    &:after
+      content '巴'
+      color #fff
+
+    &.direction-up
+      &:before
+        border-radius 50% 50% 4px 4px
+
+    &.direction-right
+      &:before
+        border-radius 4px 50% 50% 4px
+
+    &.direction-down
+      &:before
+        border-radius 4px 4px 50% 50%
+
+    &.direction-left
+      &:before
+        border-radius 50% 4px 4px 50%
+
+  .item-Bug
+    &:after
+      content 'BUG'
+
+  .item-bug
+    &:before
+      background-color brown
+
+    &:after
+      content '虫'
+      color #fff
+
+  .item-Flag
+    &:after
+      content 'FL AG'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-flag
+    &:before
+      background-color gold
+
+    &:after
+      content '旗'
+
+  .item-Flower
+    &:after
+      content 'FLO WER'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-flower
+    &:before
+      background-color yellow
+
+    &:after
+      content '花'
+
+  .item-Grass
+    &:after
+      content 'GRA SS'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-grass
+    &:before
+      width 100%
+      height @width
+      left 0
+      top @left
+      border-radius 0
+      background-color #0c6
+
+    &:after
+      content '草'
+      color #fff
+
+  .item-Keke
+    &:after
+      content 'KE KE'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-keke
+    &:before
+      background-color black
+      transform-origin bottom
+      animation animation-breathing 1s ease infinite
+
+    &:after
+      content '可'
+      color #fff
+
+    &.direction-up
+      &:before
+        border-radius 50% 50% 4px 4px
+
+    &.direction-right
+      &:before
+        border-radius 4px 50% 50% 4px
+
+    &.direction-down
+      &:before
+        border-radius 4px 4px 50% 50%
+
+    &.direction-left
+      &:before
+        border-radius 50% 4px 4px 50%
+
+  .item-Key
+    &:after
+      content 'KEY'
+
+  .item-key
+    &:before
+      background-color gold
+
+    &:after
+      content '键'
+
+  .item-Rock
+    &:after
+      content 'RO CK'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-rock
+    &:before
+      background-color #777
+      border-radius 50%
+
+    &:after
+      content '岩'
+      color #fff
+
+  .item-Tree
+    &:after
+      content 'TR EE'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-tree
+    &:before
+      background-color brown
+
+    &:after
+      content '树'
+      color #fff
+
+  .item-Wall
+    &:after
+      content 'WA LL'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-wall
+    &:before
+      border-radius 0
+      background-color #336
+
+    &:after
+      content '墙'
+      color #fff
+
+  .item-Water
+    &:after
+      content 'WA TER'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-water
+    &:before
+      width 100%
+      height @width
+      left 0
+      top @left
+      border-radius 0
+      background-color rgba(#09f, 0.8)
+
+    &:after
+      content '水'
+      color #fff
+
+  .item-Defeat
+    &:after
+      content 'DEF EAT'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-Float
+    &:after
+      content 'FL OAT'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .status-float
+    z-index 5
+    opacity 0.8
+
+    &:before
+      transform translateY(-4px)
+      box-shadow 0 4px 2px rgba(#000, 0.2)
+
+    &:after
+      transform translateY(-4px)
+
+  .item-Hot
+    &:after
+      content 'HOT'
+
+  .item-Melt
+    &:after
+      content 'ME LT'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-Push
+    &:after
+      content 'PU SH'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-Sink
+    &:after
+      content 'SI NK'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-Stop
+    &:after
+      content 'ST OP'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-Text
+    &:after
+      content 'TE XT'
+      line-height (32px - 12px) * 0.5
+      padding-top 4px
+
+  .item-Win
+    &:after
+      content 'WIN'
+
+  .item-You
+    &:after
+      content 'YOU'

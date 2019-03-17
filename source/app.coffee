@@ -1,25 +1,22 @@
-# require
+$ = require 'fire-keeper'
 
-global.$ = require 'node-jquery-extend'
-global._ = $._
-global.Promise = require 'bluebird'
-global.co = Promise.coroutine
-
-# init
-
-cwd = process.cwd()
-
-# logger
-#require "#{cwd}/source/module/logger"
-
-# app
-global.app = require "#{cwd}/source/module/app"
-
-# app.fn
-app.fn = require "#{app.path.base}/source/module/fn"
-
-# extend $
-$.ago = app.fn.require './source/module/ago'
+express = require 'express'
+pug = require 'pug'
 
 # router
-app.fn.require './source/module/router'
+router = express()
+router.settings['x-powered-by'] = false
+router.listen 8080
+
+# index
+router.get '/', (req, res) ->
+
+  fnPug = pug.compileFile './source/view/index.pug',
+    cache: false
+  
+  html = fnPug()
+  
+  res.send html
+
+# static
+router.use '/static', express.static './build/static'

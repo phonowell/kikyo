@@ -1,7 +1,7 @@
 {
   "name": "kikyo",
   "version": "0.0.1",
-  "description": "A little helper to make gulpfiles simple.",
+  "description": "Project Kikyo",
   "main": "./index.js",
   "scripts": {
     "test": "mocha"
@@ -21,17 +21,10 @@
   },
   "homepage": "https://github.com/phonowell/kikyo",
   "devDependencies": {
-    "fire-keeper": "0.0.77",
-    "mocha": "^4.0.1"
+    "fire-keeper": "^0.0.144"
   },
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "body-parser": "^1.18.2",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.16.2",
-    "helmet": "^3.9.0",
-    "node-jquery-extend": "0.0.19",
-    "pug": "^2.0.0-rc.3",
-    "urlsafe-base64": "^1.0.0"
+    "express": "^4.16.4",
+    "pug": "^2.0.3"
   }
 }

@@ -1,2 +1,15 @@
+//- function
+
+mixin style(src)
+    link(
+        rel = 'stylesheet', type = 'text/css'
+        href = '/static/style/' + src + '.css?salt=' + app.salt
+    )
+
+mixin script(src)
+    script(src = '/static/script/' + src + '.js?salt=' + app.salt, defer)
+
+//- variable
 - app = {}
-- app.title = 'UILUV'
+- app.salt = 'kikyo'
+- app.title = 'Project Kikyo'

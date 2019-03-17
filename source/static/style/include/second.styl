@@ -1,0 +1,26 @@
+#world
+  .status-push
+    z-index 1
+
+  .status-text
+    z-index 1
+
+    &:before
+      border-radius 2px
+      border 1px solid
+      border-color #ccc
+      background-color rgba(@border-color, 0.5)
+
+    &:after
+      color #555
+
+    &.status-active
+      &:before
+        border-color green
+        background-color rgba(@border-color, 0.5)
+
+      &:after
+        color #fff
+
+  .status-you
+    z-index 3
